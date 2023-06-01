@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, RouteLink } from 'react-router-
 import Max from './Max';
 import Olga from './Olga';
 import Fam from './Fam';
+import Error from './Error';
 
 
 class App extends React.Component {
@@ -24,6 +25,7 @@ class App extends React.Component {
             <Route exact path="/Max" element={<Max />} />
             <Route exact path="/Olga" element={<Olga />} />
             <Route exact path="/Fam" element={<Fam />} />
+            <Route exact path="*" element={<Error />} />
           </Routes>
 
         </div>
